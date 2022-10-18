@@ -1,0 +1,14 @@
+{
+  "name": "travel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --watch"
+  },
+  "author": "Braian Molina <braian_gabriel_1993@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "3.1.8"
+  }
+}
