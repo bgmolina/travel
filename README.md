@@ -14,7 +14,7 @@
   </a>
   <a href="https://nodejs.org/en/" target="_blank">
     <img
-      src="https://img.shields.io/badge/-v3.1.8-gray?style=flat&logo=tailwind-css&logoColor=white&label=TailwindCSS&labelColor=38B2AC"
+      src="https://img.shields.io/badge/-v3.1.8-gray?style=flat&logo=tailwind-css&logoColor=white&label=TailwindCSS&labelColor=06b6d4"
       alt="TailwindCSS"
     />
   </a>
