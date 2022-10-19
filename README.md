@@ -12,7 +12,13 @@
       alt="Npm"
     />
   </a>
-  <a href="https://nodejs.org/en/" target="_blank">
+  <a href="https://prettier.io/" target="_blank">
+    <img
+      src="https://img.shields.io/badge/-v2.7.1-gray?style=flat&logo=prettier&logoColor=white&label=Prettier&labelColor=1a2b34"
+      alt="Prettier"
+    />
+  </a>
+  <a href="https://tailwindcss.com/" target="_blank">
     <img
       src="https://img.shields.io/badge/-v3.1.8-gray?style=flat&logo=tailwind-css&logoColor=white&label=TailwindCSS&labelColor=06b6d4"
       alt="TailwindCSS"
@@ -20,8 +26,8 @@
   </a>
 </p>
 
-## Run project
-Command to run project
+## Dist files
+Command to generate files in dist folder
 ```bash
 $ npm run dev
 ```

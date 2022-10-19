@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/css/output.css">
-  <title>Travel</title>
-</head>
-
-<body class="dark:bg-slate-900 flex h-screen justify-center items-center">
-
-  <!-- chat notification -->
-  <section>
-    <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
-      <div class="shrink-0">
-        <img class="h-12 w-12" src="./img/logo.svg" alt="ChitChat Logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Travel</title>
+  </head>
+  <body>
+    <nav></nav>
+    <div id="tab_bar"></div>
+    <section class="h-screen w-full">
+      <div id="home">
+        <div class="h-3/4 w-full">
+          <div
+            class="absolute flex h-full w-full flex-col items-center space-y-96 py-4"
+          >
+            <input
+              class="rounded-full p-3 shadow-sm outline-none"
+              placeholder="San Francisco"
+              type="search"
+              name=""
+              id=""
+            />
+            <button
+              class="w-36 rounded-full bg-white py-4 text-xl font-semibold text-primary shadow-sm"
+            >
+              Explorar
+            </button>
+          </div>
+          <div class="h-full w-full">
+            <img src="./img/sanFrancisco.jpg" alt="sanFrancisco" />
+          </div>
+        </div>
       </div>
-      <div>
-        <div class="text-xl font-medium text-black">ChitChat</div>
-        <p class="text-slate-500">You have a new message!</p>
-      </div>
-    </div>
-  </section>
 
-</body>
+      <div id="recomendeds"></div>
+      <div id="highlights"></div>
+    </section>
+  </body>
 </html>
