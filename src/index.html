@@ -13,7 +13,7 @@
     />
     <title>Travel</title>
   </head>
-  <body>
+  <body class="font-Montserrat">
     <nav></nav>
     <div id="tab_bar"></div>
     <section class="h-screen w-full">
@@ -23,14 +23,14 @@
             class="absolute flex h-full w-full flex-col items-center space-y-96 py-4"
           >
             <input
-              class="rounded-full p-3 shadow-sm outline-none"
+              class="transform rounded-full p-3 shadow-sm outline-none transition duration-300 ease-in-out focus-within:shadow-sm focus:scale-105 focus:ring-2"
               placeholder="San Francisco"
               type="search"
               name=""
               id=""
             />
             <button
-              class="w-36 rounded-full bg-white py-4 text-xl font-semibold text-primary shadow-sm"
+              class="w-48 transform rounded-full bg-white py-4 text-lg font-semibold text-primary shadow-sm transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-primary hover:text-white"
             >
               Explorar
             </button>
@@ -41,12 +41,31 @@
         </div>
       </div>
 
-      <div id="recomendeds" class="p-20">
-        <div class="card">
-          <div class="image"></div>
-          <div class="info">
-            <p class="country">Norway</p>
-            <p class="description">Paisajes increíbles</p>
+      <div id="recomendeds" class="p-6">
+        <p class="text-3xl font-semibold text-primary">Recomendados</p>
+        <div
+          class="mt-6 flex h-72 w-auto items-center space-x-6 overflow-x-auto overscroll-x-contain"
+        >
+          <div class="card">
+            <div class="image bg-norway"></div>
+            <div class="info bg-secondary">
+              <p class="country text-white">Norway</p>
+              <p class="description text-white">Paisajes increíbles</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image bg-new_york"></div>
+            <div class="info bg-white">
+              <p class="country text-tertiary">New York</p>
+              <p class="description text-tertiary">La gran manzana</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image bg-chicago"></div>
+            <div class="info bg-secondary">
+              <p class="country text-white">Chicago</p>
+              <p class="description text-white">La Ciudad de los Vientos</p>
+            </div>
           </div>
         </div>
       </div>

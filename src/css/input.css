@@ -4,18 +4,18 @@
 
 @layer components {
   .card {
-    @apply h-64 w-48 rounded-lg shadow-md;
+    @apply h-64 w-48 flex-none transform rounded-lg shadow-md transition hover:-translate-y-4 hover:shadow-xl;
   }
   .image {
-    @apply h-3/5 w-full rounded-t-lg bg-norway bg-cover;
+    @apply h-3/5 w-full rounded-t-lg bg-cover;
   }
   .info {
-    @apply h-2/5 w-full rounded-b-lg bg-secondary;
+    @apply h-2/5 w-full rounded-b-lg;
   }
   .country {
-    @apply px-4 py-2 text-xl font-bold text-white;
+    @apply px-4 py-2 text-xl font-bold;
   }
   .description {
-    @apply px-4 text-base text-white;
+    @apply px-4 text-base;
   }
 }
