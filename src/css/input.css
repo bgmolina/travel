@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+  /* recomendados */
   .card {
     @apply h-64 w-48 flex-none transform rounded-lg shadow-md transition hover:-translate-y-4 hover:shadow-xl;
   }
@@ -17,5 +18,15 @@
   }
   .description {
     @apply px-4 text-base;
+  }
+  /* destacados */
+  .cardTreding {
+    @apply h-96 w-full rounded-xl bg-cover;
+  }
+  .cardTredingTitle {
+    @apply px-8 pt-8 pb-2 text-3xl font-semibold text-white;
+  }
+  .cardTredingDescription {
+    @apply mr-24 pl-8 text-sm;
   }
 }
