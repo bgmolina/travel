@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}", "./dist/*.{html,js}"],
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
@@ -10,7 +11,6 @@ module.exports = {
         LA: "url('/dist/img/LA.jpg')",
         seattle: "url('/dist/img/seattle.jpg')",
         new_york: "url('/dist/img/new_york.jpg')",
-        norway: "url('/dist/img/norway.jpg')",
         sydney: "url('/dist/img/sydney.jpg')",
         miami: "url('/dist/img/miami.jpg')",
         switzerland: "url('/dist/img/switzerland.jpg')",
