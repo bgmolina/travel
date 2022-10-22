@@ -26,8 +26,8 @@
   </a>
 </p>
 
-## Dist files
-Command to generate files in dist folder
+## Public files
+Command to generate files in public folder
 ```bash
 $ npm run dev
 ```
