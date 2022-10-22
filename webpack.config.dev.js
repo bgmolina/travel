@@ -7,7 +7,7 @@ module.exports = {
   entry: "./index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "index.[contenthash].js",
+    filename: "index.js",
     clean: true,
   },
 
@@ -25,7 +25,7 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
         generator: {
-          filename: "img/[name].[contenthash][ext]",
+          filename: "img/[name].[ext]",
         },
       },
       {
@@ -35,15 +35,25 @@ module.exports = {
     ],
   },
 
+  mode: "development",
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
+    compress: true,
+    port: 3000,
+    open: ["index.html"],
+  },
+
   plugins: [
     new HtmlWebpackPlugin({
       inject: "head",
       template: "./index.html",
-      filename: "index.[contenthash].html",
+      filename: "index.html",
     }),
 
     new MiniCssExtractPlugin({
-      filename: "index.[contenthash].css",
+      filename: "index.css",
     }),
   ],
 };
