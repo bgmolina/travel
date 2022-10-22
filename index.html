@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <script defer src="./index.js"></script>
+    <!-- <link rel="stylesheet" href="/public/css/output.css" /> -->
+    <!-- <script defer src="./index.js"></script> -->
     <title>Travel</title>
   </head>
   <body class="font-Montserrat dark:bg-gray-900">
+    <div id="main"></div>
     <nav
       class="z-10 hidden h-14 w-full justify-between bg-white p-4 dark:bg-gray-800 lg:fixed lg:flex"
     >
@@ -82,7 +83,7 @@
       <div id="home" class="h-3/4">
         <div class="h-auto w-full">
           <div
-            class="absolute flex w-full flex-col items-center space-y-96 py-4 lg:items-start lg:justify-start lg:space-y-0 lg:pt-48"
+            class="absolute flex w-full flex-col items-center space-y-96 py-4 lg:items-start lg:justify-start lg:space-y-0 lg:pt-40"
           >
             <input
               class="transform rounded-full p-3 shadow-sm outline-none transition duration-300 ease-in-out focus-within:shadow-sm focus:scale-105 focus:ring-2 lg:hidden"
@@ -119,7 +120,7 @@
           Recomendados
         </p>
         <div
-          class="mt-6 flex h-72 w-auto items-center space-x-6 overflow-x-auto overscroll-x-contain"
+          class="mt-6 flex h-72 w-auto items-center space-x-6 overflow-x-auto overscroll-x-contain lg:scrollbar-thin lg:scrollbar-track-gray-200 lg:scrollbar-thumb-gray-400 lg:scrollbar-track-rounded-full lg:scrollbar-thumb-rounded-full"
         >
           <div class="card">
             <div class="image bg-norway"></div>

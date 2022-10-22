@@ -1,3 +1,5 @@
+import "./public/css/output.css";
+
 const htmlDocument = document.querySelector("html");
 const toggleButton = document.querySelector("#toggle");
 const toggleButtonSm = document.querySelector("#toggle-sm");
