@@ -18,11 +18,10 @@
       alt="Webpack"
     />
   </a>
-  <a href="https://github.com/" target="_blank">
+  <a href="https://pages.github.com/" target="_blank">
     <img
-      src="https://img.shields.io/badge/-v4.0.0-gray?style=flat&logo=github&label=gh-pages
-&labelColor=161b22"
-      alt="gh-pages"
+      src="https://img.shields.io/badge/-v4.0.0-gray?style=flat&logo=github&label=gh-pages&labelColor=161b22"
+      alt="GitHub Page"
     />
   </a>
   <a href="https://prettier.io/" target="_blank">
@@ -50,11 +49,10 @@ Command to build the project
 $ npm run build
 ```
 ## Project website  🌐
-👉 [`URL`](https://github.com/bmolina1993)
+<!-- 👉 [`URL`](https://github.com/bmolina1993/) -->
+👉 <a href="https://github.com/bmolina1993/" target="_blank">URL</a>
 ## Result
 <div>
-  <img width=150 src="https://media3.giphy.com/media/NYaMarKMaYfcCVz8vo/giphy.gif?cid=790b761168fb5d2d0166d770a7d7809494dc052d51a86694&rid=giphy.gif&ct=g">
-</div>
-<div>
-  <img width=500 src="https://media1.giphy.com/media/ZL1oW9EWw188Rw4yex/giphy.gif?cid=790b76117b53a9434d993aadc27c95534644af00222e058f&rid=giphy.gif&ct=g">
+  <iframe width="150" frameBorder="0" src="https://giphy.com/embed/NYaMarKMaYfcCVz8vo"></iframe>
+  <iframe width="500" frameBorder="0" src="https://giphy.com/embed/ZL1oW9EWw188Rw4yex"></iframe>
 </div>
