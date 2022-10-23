@@ -12,6 +12,19 @@
       alt="Npm"
     />
   </a>
+  <a href="https://webpack.js.org/" target="_blank">
+    <img
+      src="https://img.shields.io/badge/-v5.74.0-gray?style=flat&logo=webpack&label=webpack&labelColor=2b3a42"
+      alt="Webpack"
+    />
+  </a>
+  <a href="https://www.npmjs.com/package/gh-pages" target="_blank">
+    <img
+      src="https://img.shields.io/badge/-v4.0.0-gray?style=flat&logo=github&label=gh-pages
+&labelColor=161b22"
+      alt="GitHub Page"
+    />
+  </a>
   <a href="https://prettier.io/" target="_blank">
     <img
       src="https://img.shields.io/badge/-v2.7.1-gray?style=flat&logo=prettier&logoColor=white&label=Prettier&labelColor=1a2b34"
@@ -26,16 +39,21 @@
   </a>
 </p>
 
-## Public files
-Command to generate files in public folder
+## Run project
+Command to run the project
 ```bash
-$ npm run dev
+$ npm run start
 ```
-
+## Build project
+Command to build the project
+```bash
+$ npm run build
+```
+## Project website  🌐
+👉 [`URL`](https://github.com/bmolina1993)
 ## Result
-Comming soon...🍿
-<!-- 
 <div>
-  <img src="./src/images/image.png">
+  <img width=500 src="https://media1.giphy.com/media/ZL1oW9EWw188Rw4yex/giphy.gif?cid=790b76117b53a9434d993aadc27c95534644af00222e058f&rid=giphy.gif&ct=g">
+  <img width=150 src="https://media3.giphy.com/media/NYaMarKMaYfcCVz8vo/giphy.gif?cid=790b761168fb5d2d0166d770a7d7809494dc052d51a86694&rid=giphy.gif&ct=g">
 </div>
--->
+
