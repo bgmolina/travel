@@ -49,12 +49,7 @@ Command to build the project
 $ npm run build
 ```
 ## Project website  🌐
-<!-- 👉 [`URL`](https://github.com/bmolina1993/) -->
-👉 <a href="https://github.com/bmolina1993/" target="_blank">URL</a>
+👉 [`URL`](https://github.com/bmolina1993/)
 ## Result
-<div>
-  <iframe width="150" frameBorder="0" src="https://giphy.com/embed/NYaMarKMaYfcCVz8vo"></iframe>
-  <iframe width="500" frameBorder="0" src="https://giphy.com/embed/ZL1oW9EWw188Rw4yex"></iframe>
-</div>
-
-<div style="width:100%;height:0;padding-bottom:58%;position:relative;"><iframe src="https://giphy.com/embed/ZL1oW9EWw188Rw4yex" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/ZL1oW9EWw188Rw4yex">via GIPHY</a></p>
+<img width="150" src="./demo/demo.mobile.gif"/>
+<img width="500" src="./demo/demo.desktop.gif"/>
