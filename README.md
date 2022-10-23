@@ -49,7 +49,7 @@ Command to build the project
 $ npm run build
 ```
 ## Project website  🌐
-👉 [`URL`](https://github.com/bmolina1993/)
+👉 [`URL`](https://bmolina1993.github.io/travel/index.4906e77435b13bfc22e6.html)
 ## Result
 <img width="150" src="./demo/demo.mobile.gif"/>
 <img width="500" src="./demo/demo.desktop.gif"/>
