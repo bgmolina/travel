@@ -18,7 +18,7 @@
       alt="Webpack"
     />
   </a>
-  <a href="https://pages.github.com/" target="_blank">
+  <a href="https://github.com/" target="_blank">
     <img
       src="https://img.shields.io/badge/-v4.0.0-gray?style=flat&logo=github&label=gh-pages
 &labelColor=161b22"
