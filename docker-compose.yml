@@ -1,6 +1,12 @@
 services:
   app:
     build: .
+    volumes:
+      - type: bind
+        source: .
+        target: /app
     ports:
       - "3000:3000"
+    environment:
+      DEBUG: 'true'
     command: "npm start"
