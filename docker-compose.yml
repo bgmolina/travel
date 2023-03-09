@@ -1,12 +1,23 @@
 services:
   app:
     build: .
+    # opcion 1
     volumes:
       - type: bind
         source: .
         target: /app
+        # genera efecto de ignorar carpeta del Host
+        # para no pisar lo que tenga el container
+      - type: volume
+        target: /app/node_modules
+
+    # opcion 2
+    # volumes:
+    #   - .:/app
+    #   - /app/node_modules
     ports:
-      - "3000:3000"
+      - "3000:8080"
     environment:
       DEBUG: 'true'
-    command: "npm start"
+    command: "npm run dev"
+    #command: "npm run test"

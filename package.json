@@ -4,10 +4,16 @@
   "description": "proyecto de viajes",
   "main": "index.js",
   "scripts": {
-    "prestart": "npx webpack --config webpack.config.dev.js",
-    "start": "npx webpack serve --config webpack.config.dev.js",
+    "pretest": "pwd",
+    "test": "ls",
+
+
+    "predev": "npx webpack --config webpack.config.dev.js",
+    "dev": "npx webpack serve --config webpack.config.dev.js",
+    "prepreview": "npx tailwindcss -i ./src/css/input.css -o ./public/css/output.css --minify",
+    "preview": "npx webpack serve --config webpack.config.js",
     "prebuild": "npx tailwindcss -i ./src/css/input.css -o ./public/css/output.css --minify",
-    "build": "npx webpack --mode production",
+    "build": "npx webpack --config webpack.config.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },

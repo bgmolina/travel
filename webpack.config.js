@@ -35,11 +35,22 @@ module.exports = {
     ],
   },
 
+  mode: "production",
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
+    compress: true,
+    // port: 3001,
+    open: ["index.html"],
+  },
+
   plugins: [
     new HtmlWebpackPlugin({
       inject: "head",
       template: "./index.html",
-      filename: "index.[contenthash].html",
+      // filename: "index.[contenthash].html",
+      filename: "index.html",
     }),
 
     new MiniCssExtractPlugin({
