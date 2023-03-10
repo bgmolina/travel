@@ -41,7 +41,6 @@ module.exports = {
       directory: path.join(__dirname, "dist"),
     },
     compress: true,
-    // port: 3001,
     open: ["index.html"],
   },
 
@@ -49,7 +48,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: "head",
       template: "./index.html",
-      // filename: "index.[contenthash].html",
       filename: "index.html",
     }),
 

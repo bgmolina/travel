@@ -4,8 +4,8 @@ WORKDIR /app
 
 COPY [".", "."]
 
-RUN npm install
+RUN npm install --only=production
 
 EXPOSE 8080
 
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "preview"]

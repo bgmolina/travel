@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./production.Dockerfile
+    ports:
+      - "3001:8080"
+    environment:
+      PRODUCTION: 'true'
+    command: "npm run preview"
