@@ -1,10 +1,21 @@
 services:
-  app:
+  travel-app-prod:
+    env_file: .env
+    restart: always
     build:
       context: .
       dockerfile: ./production.Dockerfile
+    image: "${PROD_APP_NAME}:1.0.0"
+    container_name: "${PROD_APP_NAME}"
+    networks:
+      - frontend
     ports:
-      - "3001:8080"
+      - "${PROD_APP_PORT}:8080"
     environment:
-      PRODUCTION: 'true'
-    command: "npm run preview"
+      PRODUCTION: true
+    command: npm run preview
+
+networks:
+  frontend:
+    name: "${PROD_APP_NAME}"
+    driver: bridge
