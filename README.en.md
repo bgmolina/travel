@@ -39,22 +39,14 @@
 </p>
 
 
-<a href="README.en.md">
+<a href="https://" target="_blank">
   <img
-    src="https://img.shields.io/badge/English1-5291f5?style=for-the-badge&logoColor=white&logo=googletranslate"
+    src="https://img.shields.io/badge/English-5291f5?style=for-the-badge&logoColor=white&logo=googletranslate"
     alt="English"
   />
 </a>
 
-<!-- ![Button Icon] -->
-[![Button Icon]][Link]
-
-
-[Button Icon]: https://img.shields.io/badge/English2-5291f5?style=for-the-badge&logoColor=white&logo=googletranslate
-[Link]: './README.en.md'
-
-
-## Run project
+## Run project 2
 Command to run the project
 ```bash
 $ npm run start
