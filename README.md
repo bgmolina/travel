@@ -51,7 +51,7 @@
 
 
 [Button Icon]: https://img.shields.io/badge/English2-5291f5?style=for-the-badge&logoColor=white&logo=googletranslate
-[Link]: './README.en.md'
+[Link]: 'README.en.md'
 
 
 ## Run project
