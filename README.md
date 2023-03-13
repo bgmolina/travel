@@ -1,3 +1,10 @@
+<a href="README.en.md" style="display:flex; justify-content: flex-end;">
+  <img
+    src="https://img.shields.io/badge/English-5291f5?style=for-the-badge&logoColor=white&logo=googletranslate"
+    alt="English"
+  />
+</a>
+
 # Tailwind project
 <p>
   <a href="https://nodejs.org/en/" target="_blank">
@@ -38,34 +45,21 @@
   </a>
 </p>
 
-
-<a href="README.en.md">
-  <img
-    src="https://img.shields.io/badge/English1-5291f5?style=for-the-badge&logoColor=white&logo=googletranslate"
-    alt="English"
-  />
-</a>
-
-<!-- ![Button Icon] -->
-[![Button Icon]][Link]
-
-
-[Button Icon]: https://img.shields.io/badge/English2-5291f5?style=for-the-badge&logoColor=white&logo=googletranslate
-[Link]: 'README.en.md'
-
-
 ## Run project
 Command to run the project
 ```bash
 $ npm run start
 ```
+
 ## Build project
 Command to build the project
 ```bash
 $ npm run build
 ```
+
 ## Project website  🌐
 👉 [`URL`](https://bmolina1993.github.io/travel/index.4906e77435b13bfc22e6.html)
+
 ## Result
 <img width="150" src="./demo/demo.mobile.gif"/>
 <img width="500" src="./demo/demo.desktop.gif"/>
