@@ -1,5 +1,6 @@
-<a href="README.en.md" style="display:flex; justify-content: flex-end;">
+<a href="README.en.md">
   <img
+    align="right"
     src="https://img.shields.io/badge/English-5291f5?style=for-the-badge&logoColor=white&logo=googletranslate"
     alt="English"
   />
