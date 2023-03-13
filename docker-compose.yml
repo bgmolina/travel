@@ -2,7 +2,7 @@ services:
   travel-app-dev:
     env_file: .env
     build: .
-    image: "${DEV_APP_NAME}:1.0.0"
+    image: "${DEV_APP_NAME}:${DEV_APP_VERSION}"
     container_name: "${DEV_APP_NAME}"
     networks:
       - frontend
