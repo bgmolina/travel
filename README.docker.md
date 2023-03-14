@@ -85,6 +85,8 @@ PROD_APP_PORT=3001
 ## Docker Compose 🐋
 ## Docker Compose ![](./public/img/docker-compose.webp)
 
+## Comandos Docker ![](./public/img/terminal.png)
+
 <!-- 
 ## Ejecución modo desarollo
 ```bash
