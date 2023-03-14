@@ -68,6 +68,17 @@
 #### - Docker Compose v2.x
 #### - Ejecutar comandos en root del proyecto
 
+- Docker Compose v2.x
+- Ejecutar comandos en root del proyecto
+
+#### Variables de entorno
+Debemos configurar variables del proyecto en el archivo **.env**
+```bash
+DEV_APP_NAME="travel-app-dev" # Nombre app
+DEV_APP_VERSION=1.0.0 # Versión app
+DEV_APP_PORT=3000 # Puerto FrontEnd
+```
+
 <!-- 
 ## Ejecución modo desarollo
 ```bash
