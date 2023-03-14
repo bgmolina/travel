@@ -7,7 +7,7 @@
 </a>
 
 # Proyecto de viajes 🏖️
-<p>
+<div>
   <a href="https://ubuntu.com/wsl" target="_blank">
     <img
       src="https://img.shields.io/badge/v22.04.2-gray?style=flat&logo=ubuntu&logoColor=white&label=WSL2&labelColor=e95420"
@@ -22,7 +22,7 @@
   </a>
   <a href="https://docs.docker.com/compose/" target="_blank">
     <img
-      src="https://img.shields.io/badge/v2.16.0-gray?style=flat&logo=octopusdeploy&logoColor=white&label=Docker compose&labelColor=46a2f1"
+      src="https://img.shields.io/badge/v2.16.0-gray?style=flat&logo=docker&logoColor=white&label=Docker Compose&labelColor=46a2f1"
       alt="Docker compose"
     />
   </a>
@@ -62,11 +62,11 @@
       alt="TailwindCSS"
     />
   </a>
-</p>
+</div>
 
 ### Requisitos previos 📝
-- Docker Compose v2.x
-- Ejecutar comandos en root del proyecto
+- Docker Compose **versión 2.x**
+- Ejecutar comandos en **root** del proyecto
 
 #### Variables de entorno
 Configurar variables del proyecto en archivo **.env**
@@ -81,6 +81,14 @@ PROD_APP_NAME="travel-app-prod"
 PROD_APP_VERSION=1.0.0
 PROD_APP_PORT=3001
 ```
+
+## Docker Compose 🐋
+<div style="display:flex; ">
+  <h2>Docker Compose</h2>
+  <figure style="width:30px">
+    <img src="./public/img/docker-compose.webp"/>
+  </figure>
+</div>
 
 <!-- 
 ## Ejecución modo desarollo
