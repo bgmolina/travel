@@ -1,7 +1,7 @@
 <a href="README.md">
   <img
     align="right"
-    src="https://img.shields.io/badge/Inicio-121011?style=for-the-badge&logoColor=white&logo=github"
+    src="https://img.shields.io/badge/Inicio-161b22?style=for-the-badge&logoColor=white&logo=github"
     alt="Inicio"
   />
 </a>
