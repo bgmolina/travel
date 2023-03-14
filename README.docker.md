@@ -83,12 +83,7 @@ PROD_APP_PORT=3001
 ```
 
 ## Docker Compose 🐋
-<div style="display:flex; ">
-  <h2>Docker Compose</h2>
-  <figure style="width:30px">
-    <img src="./public/img/docker-compose.webp"/>
-  </figure>
-</div>
+## Docker Compose ![](./public/img/docker-compose.webp)
 
 <!-- 
 ## Ejecución modo desarollo
