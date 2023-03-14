@@ -56,5 +56,5 @@ $ npm run build
 👉 [`URL`](https://bmolina1993.github.io/travel/index.html)
 
 ## Demo 🎬
-<img width="150" src="./demo/demo.mobile.gif"/>
-<img width="500" src="./demo/demo.desktop.gif"/>
+<img width="150" src="./demo/mobile.gif"/>
+<img width="500" src="./demo/desktop.gif"/>

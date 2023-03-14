@@ -82,10 +82,60 @@ PROD_APP_VERSION=1.0.0
 PROD_APP_PORT=3001
 ```
 
-## Docker Compose 🐋
 ## Docker Compose ![](./public/img/docker-compose.webp)
+<!-- ### Construye aplicación en modo desarrollo -->
+### Desarrollo
+```bash
+$ docker compose up -d
+```
+### Demo 🎬
+<img width="500" src="./demo/dev-docker-compose.gif"/>
+
+
+### Producción
+```bash
+$ docker compose -f docker-compose.prod.yml up -d
+```
+### Demo 🎬
+<img width="500" src="./demo/prod-docker-compose.gif"/>
+
 
 ## Comandos Docker ![](./public/img/terminal.png)
+
+
+## Información relevante de lo construido
+### Imagen
+```bash
+$ docker images
+```
+| REPOSITORY     | TAG   | SIZE  |
+| -------------- | ----- | ----- |
+| travel-app-dev | 1.0.0 | 299MB |
+
+### Volumen
+```bash
+$ docker volume ls
+```
+| DRIVER | VOLUME NAME    |
+| ------ | -------------- |
+| local  | travel-app-dev |
+
+### Red
+```bash
+$ docker network ls
+```
+| NAME           | DRIVER | SCOPE |
+| -------------- | ------ | ----- |
+| travel-app-dev | bridge | local |
+
+### Contenedor
+```bash
+$ docker compose ps
+```
+| NAME           | IMAGE                | SERVICE        | PORTS                                     |
+| -------------- | -------------------- | -------------- | ----------------------------------------- |
+| travel-app-dev | travel-app-dev:1.0.0 | travel-app-dev | 0.0.0.0:3000->8080/tcp, :::3000->8080/tcp |
+
 
 <!-- 
 ## Ejecución modo desarollo
