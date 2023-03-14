@@ -65,9 +65,6 @@
 </p>
 
 ### Requisitos previos 📝
-#### - Docker Compose v2.x
-#### - Ejecutar comandos en root del proyecto
-
 - Docker Compose v2.x
 - Ejecutar comandos en root del proyecto
 
