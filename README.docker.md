@@ -69,11 +69,17 @@
 - Ejecutar comandos en root del proyecto
 
 #### Variables de entorno
-Debemos configurar variables del proyecto en el archivo **.env**
+Configurar variables del proyecto en archivo **.env**
 ```bash
+# development
 DEV_APP_NAME="travel-app-dev" # Nombre app
 DEV_APP_VERSION=1.0.0 # Versión app
 DEV_APP_PORT=3000 # Puerto FrontEnd
+
+# production
+PROD_APP_NAME="travel-app-prod"
+PROD_APP_VERSION=1.0.0
+PROD_APP_PORT=3001
 ```
 
 <!-- 
