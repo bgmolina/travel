@@ -1,22 +1,40 @@
-<a href="README.en.md">
+<a href="README.md">
   <img
     align="right"
-    src="https://img.shields.io/badge/English-5291f5?style=for-the-badge&logoColor=white&logo=googletranslate"
-    alt="English"
+    src="https://img.shields.io/badge/Inicio-121011?style=for-the-badge&logoColor=white&logo=github"
+    alt="Inicio"
   />
 </a>
 
 # Proyecto de viajes 🏖️
 <p>
+  <a href="https://ubuntu.com/wsl" target="_blank">
+    <img
+      src="https://img.shields.io/badge/v22.04.2-gray?style=flat&logo=ubuntu&logoColor=white&label=WSL2&labelColor=e95420"
+      alt="WSL2 Ubuntu"
+    />
+  </a>
+  <a href="https://www.docker.com/" target="_blank">
+    <img
+      src="https://img.shields.io/badge/v23.0.1-gray?style=flat&logo=docker&logoColor=white&label=Docker&labelColor=46a2f1"
+      alt="Docker"
+    />
+  </a>
+  <a href="https://docs.docker.com/compose/" target="_blank">
+    <img
+      src="https://img.shields.io/badge/v2.16.0-gray?style=flat&logo=octopusdeploy&logoColor=white&label=Docker compose&labelColor=46a2f1"
+      alt="Docker compose"
+    />
+  </a>
   <a href="https://nodejs.org/en/" target="_blank">
     <img
-      src="https://img.shields.io/badge/v16.16.0-gray?style=flat&logo=node.js&logoColor=white&label=Node.js&labelColor=43853D"
+      src="https://img.shields.io/badge/v18.14.2-gray?style=flat&logo=node.js&logoColor=white&label=Node.js&labelColor=43853D"
       alt="Node Js"
     />
   </a>
   <a href="https://www.npmjs.com/" target="_blank">
     <img
-      src="https://img.shields.io/badge/v8.11.0-gray?style=flat&logo=npm&label=npm&labelColor=cb0000"
+      src="https://img.shields.io/badge/v9.5.0-gray?style=flat&logo=npm&label=npm&labelColor=cb0000"
       alt="Npm"
     />
   </a>
@@ -46,6 +64,11 @@
   </a>
 </p>
 
+### Requisitos previos 📝
+#### - Docker Compose v2.x
+#### - Ejecutar comandos en root del proyecto
+
+<!-- 
 ## Ejecución modo desarollo
 ```bash
 $ npm run dev
@@ -62,3 +85,4 @@ $ npm run build
 ## Demo 🎬
 <img width="150" src="./demo/demo.mobile.gif"/>
 <img width="500" src="./demo/demo.desktop.gif"/>
+-->

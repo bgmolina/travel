@@ -34,7 +34,6 @@
   </a>
 </p>
 
-<!-- 🐋 -->
 ## 👇 Ejecución con Docker
 <a href="README.docker.md">
   <img
