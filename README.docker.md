@@ -26,6 +26,12 @@
       alt="Docker compose"
     />
   </a>
+  <a href="https://nginx.org/en/docs/" target="_blank">
+    <img
+      src="https://img.shields.io/badge/v1.23.3-gray?style=flat&logo=nginx&logoColor=white&label=Nginx&labelColor=009639"
+      alt="Nginx"
+    />
+  </a>
   <a href="https://nodejs.org/en/" target="_blank">
     <img
       src="https://img.shields.io/badge/v18.14.2-gray?style=flat&logo=node.js&logoColor=white&label=Node.js&labelColor=43853D"
@@ -83,34 +89,108 @@ PROD_APP_PORT=3001
 ```
 
 ## Docker Compose ![](./public/img/docker-compose.webp)
-<!-- ### Construye aplicación en modo desarrollo -->
-### Desarrollo
+### Desarrollo ⛏️
 ```bash
 $ docker compose up -d
 ```
+
 ### Demo 🎬
 <img width="500" src="./demo/dev-docker-compose.gif"/>
 
+### Comandos Útiles 🔧
+Acceder a directorio de contenedor
+```bash
+$ docker compose exec travel-app-dev sh
+```
+Remueve contenedor/red
+```bash
+$ docker compose down
+```
+Logs de contenedor
+```bash
+$ docker compose logs travel-app-dev
+```
 
-### Producción
+### Producción con Nginx ⚙️
 ```bash
 $ docker compose -f docker-compose.prod.yml up -d
 ```
+
 ### Demo 🎬
 <img width="500" src="./demo/prod-docker-compose.gif"/>
 
+### Comandos Útiles 🔧
+Acceder a directorio de contenedor
+```bash
+$ docker compose exec travel-app-prod sh
+```
+Remueve contenedor/red
+```bash
+$ docker compose -f docker-compose.prod.yml down
+```
+Logs de contenedor
+```bash
+$ docker compose -f docker-compose.prod.yml logs travel-app-prod
+```
 
 ## Comandos Docker ![](./public/img/terminal.png)
+### Desarrollo ⛏️
+```bash
+$ docker build -t travel-app-dev:1.0.0 .
+```
+```bash
+$ docker volume create travel-app-dev
+```
+```bash
+$ docker run -d --name travel-app-dev -p 3000:8080  \
+--mount type=bind,source="$(pwd)",target=/app  \
+--mount type=volume,source=travel-app-dev,target=/app/node_modules  \
+travel-app-dev:1.0.0
+```
 
+### Demo 🎬
+<img width="500" src="./demo/dev-docker-command.gif"/>
+
+### Comandos Útiles 🔧
+Acceder a directorio de contenedor
+```bash
+$ docker exec -it travel-app-dev sh
+```
+Logs de contenedor
+```bash
+$ docker logs travel-app-dev
+```
+
+### Producción con Nginx ⚙️
+```bash
+$ docker build -t travel-app-prod:1.0.0 -f Dockerfile.prod .
+```
+```bash
+$ docker run -d --restart always --name travel-app-prod -p 3001:80 travel-app-prod:1.0.0
+```
+
+### Demo 🎬
+<img width="500" src="./demo/prod-docker-command.gif"/>
+
+### Comandos Útiles 🔧
+Acceder a directorio de contenedor
+```bash
+$ docker exec -it travel-app-prod sh
+```
+Logs de contenedor
+```bash
+$ docker logs travel-app-prod
+```
 
 ## Información relevante de lo construido
 ### Imagen
 ```bash
 $ docker images
 ```
-| REPOSITORY     | TAG   | SIZE  |
-| -------------- | ----- | ----- |
-| travel-app-dev | 1.0.0 | 299MB |
+| REPOSITORY      | TAG   | SIZE  |
+| --------------- | ----- | ----- |
+| travel-app-dev  | 1.0.0 | 299MB |
+| travel-app-prod | 1.0.0 | 44MB  |
 
 ### Volumen
 ```bash
@@ -124,34 +204,17 @@ $ docker volume ls
 ```bash
 $ docker network ls
 ```
-| NAME           | DRIVER | SCOPE |
-| -------------- | ------ | ----- |
-| travel-app-dev | bridge | local |
+| NAME            | DRIVER | SCOPE |
+| --------------- | ------ | ----- |
+| travel-app-dev  | bridge | local |
+| travel-app-prod | bridge | local |
 
 ### Contenedor
 ```bash
 $ docker compose ps
 ```
-| NAME           | IMAGE                | SERVICE        | PORTS                                     |
-| -------------- | -------------------- | -------------- | ----------------------------------------- |
-| travel-app-dev | travel-app-dev:1.0.0 | travel-app-dev | 0.0.0.0:3000->8080/tcp, :::3000->8080/tcp |
+| NAME            | IMAGE                 | SERVICE         | PORTS                                     |
+| --------------- | --------------------- | --------------- | ----------------------------------------- |
+| travel-app-dev  | travel-app-dev:1.0.0  | travel-app-dev  | 0.0.0.0:3000->8080/tcp, :::3000->8080/tcp |
+| travel-app-prod | travel-app-prod:1.0.0 | travel-app-prod | 0.0.0.0:3001->80/tcp, :::3001->80/tcp     |
 
-
-<!-- 
-## Ejecución modo desarollo
-```bash
-$ npm run dev
-```
-
-## Compilación proyecto
-```bash
-$ npm run build
-```
-
-## Link proyecto 🌐
-👉 [`URL`](https://bmolina1993.github.io/travel/index.html)
-
-## Demo 🎬
-<img width="150" src="./demo/demo.mobile.gif"/>
-<img width="500" src="./demo/demo.desktop.gif"/>
--->
