@@ -111,6 +111,8 @@ Logs de contenedor
 $ docker compose logs travel-app-dev
 ```
 
+---
+
 ### Producción con Nginx ⚙️
 ```bash
 $ docker compose -f docker-compose.prod.yml up -d
@@ -161,6 +163,8 @@ Logs de contenedor
 $ docker logs travel-app-dev
 ```
 
+---
+
 ### Producción con Nginx ⚙️
 ```bash
 $ docker build -t travel-app-prod:1.0.0 -f Dockerfile.prod .
@@ -182,7 +186,8 @@ Logs de contenedor
 $ docker logs travel-app-prod
 ```
 
-## Información relevante de lo construido
+
+## Información relevante 📑
 ### Imagen
 ```bash
 $ docker images
