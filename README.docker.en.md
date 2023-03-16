@@ -1,12 +1,12 @@
-<a href="README.md">
+<a href="README.en.md">
   <img
     align="right"
-    src="https://img.shields.io/badge/Inicio-161b22?style=for-the-badge&logoColor=white&logo=github"
-    alt="Inicio"
+    src="https://img.shields.io/badge/Home-161b22?style=for-the-badge&logoColor=white&logo=github"
+    alt="Home"
   />
 </a>
 
-# Proyecto de viajes 🏖️
+# Travel project 🏖️
 <div>
   <a href="https://ubuntu.com/wsl" target="_blank">
     <img
@@ -70,17 +70,17 @@
   </a>
 </div>
 
-### Requisitos previos 📝
+### Previous requirements 📝
 - Docker Compose **versión 2.x**
-- Ejecutar comandos en **root** del proyecto
+- Run commands in **root** project
 
-#### Variables de entorno
-Configurar variables del proyecto en archivo **.env**
+#### Environment variables
+Set project variables in **.env** file
 ```bash
 # development
-DEV_APP_NAME="travel-app-dev" # Nombre app
-DEV_APP_VERSION=1.0.0 # Versión app
-DEV_APP_PORT=3000 # Puerto FrontEnd
+DEV_APP_NAME="travel-app-dev" # App name
+DEV_APP_VERSION=1.0.0 # App version
+DEV_APP_PORT=3000 # FrontEnd port
 
 # production
 PROD_APP_NAME="travel-app-prod"
@@ -89,7 +89,7 @@ PROD_APP_PORT=3001
 ```
 
 ## Docker Compose ![](./public/img/docker-compose.webp)
-### Desarrollo ⛏️
+### Development ⛏️
 ```bash
 $ docker compose up -d
 ```
@@ -97,23 +97,23 @@ $ docker compose up -d
 ### Demo 🎬
 <img width="500" src="./demo/dev-docker-compose.gif"/>
 
-### Comandos Útiles 🔧
-Acceder a directorio de contenedor
+### Useful commands 🔧
+Access container directory
 ```bash
 $ docker compose exec travel-app-dev sh
 ```
-Remueve contenedor/red
+Remove container/network
 ```bash
 $ docker compose down
 ```
-Logs de contenedor
+Container logs
 ```bash
 $ docker compose logs travel-app-dev
 ```
 
 ---
 
-### Producción con Nginx ⚙️
+### Production with Nginx ⚙️
 ```bash
 $ docker compose -f docker-compose.prod.yml up -d
 ```
@@ -121,22 +121,22 @@ $ docker compose -f docker-compose.prod.yml up -d
 ### Demo 🎬
 <img width="500" src="./demo/prod-docker-compose.gif"/>
 
-### Comandos Útiles 🔧
-Acceder a directorio de contenedor
+### Useful commands 🔧
+Access container directory
 ```bash
 $ docker compose exec travel-app-prod sh
 ```
-Remueve contenedor/red
+Remove container/network
 ```bash
 $ docker compose -f docker-compose.prod.yml down
 ```
-Logs de contenedor
+Container logs
 ```bash
 $ docker compose -f docker-compose.prod.yml logs travel-app-prod
 ```
 
-## Comandos Docker ![](./public/img/terminal.png)
-### Desarrollo ⛏️
+## Docker commands ![](./public/img/terminal.png)
+### Development ⛏️
 ```bash
 $ docker build -t travel-app-dev:1.0.0 .
 ```
@@ -153,19 +153,19 @@ travel-app-dev:1.0.0
 ### Demo 🎬
 <img width="500" src="./demo/dev-docker-command.gif"/>
 
-### Comandos Útiles 🔧
-Acceder a directorio de contenedor
+### Useful commands 🔧
+Access container directory
 ```bash
 $ docker exec -it travel-app-dev sh
 ```
-Logs de contenedor
+Container logs
 ```bash
 $ docker logs travel-app-dev
 ```
 
 ---
 
-### Producción con Nginx ⚙️
+### Production with Nginx ⚙️
 ```bash
 $ docker build -t travel-app-prod:1.0.0 -f Dockerfile.prod .
 ```
@@ -176,19 +176,19 @@ $ docker run -d --restart always --name travel-app-prod -p 3001:80 travel-app-pr
 ### Demo 🎬
 <img width="500" src="./demo/prod-docker-command.gif"/>
 
-### Comandos Útiles 🔧
-Acceder a directorio de contenedor
+### Useful commands 🔧
+Access container directory
 ```bash
 $ docker exec -it travel-app-prod sh
 ```
-Logs de contenedor
+Container logs
 ```bash
 $ docker logs travel-app-prod
 ```
 
 
-## Información relevante 📑
-### Imagen
+## Important information 📑
+### Image
 ```bash
 $ docker images
 ```
@@ -197,7 +197,7 @@ $ docker images
 | travel-app-dev  | 1.0.0 | 299MB |
 | travel-app-prod | 1.0.0 | 44MB  |
 
-### Volumen
+### Volume
 ```bash
 $ docker volume ls
 ```
@@ -205,7 +205,7 @@ $ docker volume ls
 | ------ | -------------- |
 | local  | travel-app-dev |
 
-### Red
+### Network
 ```bash
 $ docker network ls
 ```
@@ -214,7 +214,7 @@ $ docker network ls
 | travel-app-dev  | bridge | local |
 | travel-app-prod | bridge | local |
 
-### Contenedor
+### Container
 ```bash
 $ docker compose ps
 ```

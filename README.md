@@ -7,7 +7,7 @@
 </a>
 
 # Proyecto de viajes 🏖️
-<p>
+<div>
   <a href="https://webpack.js.org/" target="_blank">
     <img
       src="https://img.shields.io/badge/v5.74.0-gray?style=flat&logo=webpack&label=Webpack&labelColor=2b3a42"
@@ -32,7 +32,7 @@
       alt="TailwindCSS"
     />
   </a>
-</p>
+</div>
 
 ## 👇 Ejecución con Docker
 <a href="README.docker.md">

@@ -7,7 +7,7 @@
 </a>
 
 # Travel project 🏖️
-<p>
+<div>
   <a href="https://webpack.js.org/" target="_blank">
     <img
       src="https://img.shields.io/badge/v5.74.0-gray?style=flat&logo=webpack&label=webpack&labelColor=2b3a42"
@@ -32,18 +32,28 @@
       alt="TailwindCSS"
     />
   </a>
-</p>
+</div>
+
+## 👇 Run with Docker
+<a href="README.docker.en.md">
+  <img
+    src="https://img.shields.io/badge/Docker-086dd7?style=for-the-badge&logoColor=white&logo=docker"
+    alt="Docker"
+  />
+</a>
 
 ## Run development mode
 ```bash
 $ npm run dev
 ```
+
 ## Build project
 ```bash
 $ npm run build
 ```
+
 ## Link website  🌐
-👉 [`URL`](https://bmolina1993.github.io/travel/index.4906e77435b13bfc22e6.html)
-## Result
-<img width="150" src="./demo/demo.mobile.gif"/>
-<img width="500" src="./demo/demo.desktop.gif"/>
+👉 [`URL`](https://bmolina1993.github.io/travel/index.html)
+## Demo
+<img width="150" src="./demo/mobile.gif"/>
+<img width="500" src="./demo/desktop.gif"/>
