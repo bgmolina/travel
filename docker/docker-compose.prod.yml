@@ -1,0 +1,12 @@
+services:
+  travel-prod:
+    build: ../
+    image: travel:1.0.0
+    container_name: travel-prod
+    ports:
+      - 4001:80
+    restart: unless-stopped
+    mem_reservation: 8m
+    mem_limit: 16m
+    cpus: 0.10 # 10% of CPU
+    cpuset: "0" # Use only the first CPU
