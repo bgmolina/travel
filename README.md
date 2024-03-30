@@ -53,7 +53,7 @@ $ npm run build
 ```
 
 ## Link sitio web 🌐
-👉 [`URL`](travel.bgma.tech)
+👉 [`URL`](https://travel.bgma.tech)
 
 ## Demo 🎬
 <img width="150" src="./demo/mobile.gif"/>
