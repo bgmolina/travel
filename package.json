@@ -7,9 +7,7 @@
     "predev": "npx webpack --config webpack.config.dev.js",
     "dev": "npx webpack serve --config webpack.config.dev.js",
     "prebuild": "npx tailwindcss -i ./src/css/input.css -o ./public/css/output.css --minify",
-    "build": "npx webpack --config webpack.config.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "build": "npx webpack --config webpack.config.js"
   },
   "author": "Braian Molina <braian_gabriel_1993@hotmail.com>",
   "license": "MIT",
@@ -24,10 +22,8 @@
     "html-loader": "4.2.0"
   },
   "devDependencies": {
-    "gh-pages": "4.0.0",
     "prettier": "2.7.1",
     "prettier-plugin-tailwindcss": "0.1.13",
     "webpack-dev-server": "4.11.1"
-  },
-  "homepage": "https://bmolina1993.github.io/travel"
+  }
 }
