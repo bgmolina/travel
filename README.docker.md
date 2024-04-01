@@ -53,7 +53,7 @@ Select an option and press Enter 👆:
 ```
 
 ### Demo 🎬
-<!-- <img width="500" src="./demo/docker.gif"/> -->
+<img width="500" src="./demo/docker.gif"/>
 
 ## Información relevante 📑
 ### Imagen
