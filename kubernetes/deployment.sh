@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "==================="
-echo " Travel deployment "
+echo " Travel project 🏖️ "
 echo "==================="
 
 PS3="Select an option and press Enter 👆: "
